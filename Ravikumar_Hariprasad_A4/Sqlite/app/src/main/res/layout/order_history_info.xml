@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/OrderId"
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginRight="25dp"/>
+
+
+            <TextView
+                android:id="@+id/TimeStamp"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/OrderId"
+                android:layout_alignBottom="@+id/OrderId"
+                android:layout_toRightOf="@+id/OrderId"
+                android:layout_width="60dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginRight="25dp"/>
+            <TextView
+                android:id="@+id/OrderName"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/TimeStamp"
+                android:layout_alignBottom="@+id/TimeStamp"
+                android:layout_toRightOf="@+id/TimeStamp"
+                android:layout_width="40dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginRight="25dp"/>
+            <TextView
+                android:id="@+id/OrderPrice"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/OrderName"
+                android:layout_alignBottom="@+id/OrderName"
+                android:layout_toRightOf="@+id/OrderName"
+                android:layout_width="20dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+</RelativeLayout>
